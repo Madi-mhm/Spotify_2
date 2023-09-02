@@ -1,0 +1,143 @@
+.searchMainPage{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(15, 15, 15);
+
+    display: flex;
+    flex-direction: column;
+
+    .searchPage{
+        
+        *{
+            color: white;
+        }
+    
+    
+        .searchSection{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 10px;
+            height: 5rem;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.425);
+            
+    
+            a{
+                font-size: 25px;
+                cursor: pointer;
+            }
+    
+            input{
+                height: 2.5rem;
+                width: 80%;
+                padding: 0 10px;
+                outline: white;
+                color: black;
+                font-size: 15px;
+            }
+    
+            span{
+                font-size: 30px;
+                cursor: pointer;
+            }
+    
+        }
+    
+        
+    }
+    
+    .homePageContainer{
+        padding: 0 2rem 1rem 2rem;
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    
+        
+    
+        @media (min-width: 840px) {
+            padding-top: 2rem;   
+
+        }
+    
+        h3{
+            margin: 1.5rem 0rem 0rem 1rem;
+            margin-right: auto;
+        }
+    
+        .homePageCarouselContainer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            overflow: scroll;
+            overflow-y: hidden;
+    
+            .homePageCarousel{
+                display: flex;
+                gap: 3px;
+
+            }
+        }
+    
+        .homePageCarouselContainer::-webkit-scrollbar {
+            width: 8px; 
+            
+        }          
+        .homePageCarouselContainer::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+        }
+          
+        
+    }
+
+    .ArtistsTracksContinaire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+        
+    
+
+    @media (min-width: 680px ) {
+        display: flex;      
+        align-items: center;
+
+        .searchPage{
+            width: 80%;     
+           
+        }   
+
+        .homePageContainer{
+            width: 90%;
+        }
+    }
+
+    @media (min-width: 900px ) {
+
+        .searchPage{
+            width: 70%;           
+        }   
+        .homePageContainer{
+            width: 80%;
+        }
+    }
+
+    @media (min-width: 1200px ) {
+
+        .searchPage{
+            width: 50%;           
+        }   
+        .homePageContainer{
+            width: 70%;
+        }
+    }
+
+
+   
+
+}

@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+.favoritesPageContainer{
+    min-height: 100vh;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0 3rem 0;
+
+
+    .privatProfile{
+        margin-bottom: 2rem;
+        box-shadow: rgba(240, 240, 244, 0.2) 0px 7px 29px 0px;
+        border-radius: 5px;
+    }
+
+    .favoritesItems{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        overflow: scroll;
+        overflow-y: hidden;
+        margin-top: 2rem;
+
+        .bigCardsFavoriteItems{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            
+
+        }
+    }
+    .favoritesItems::-webkit-scrollbar {
+        width: 8px; 
+        
+    }          
+    .favoritesItems::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+    }
+
+    .smallCardsFavoriteItems{
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}

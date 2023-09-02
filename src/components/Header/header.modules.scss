@@ -1,0 +1,102 @@
+.headerContainer{
+    margin: 0;
+    width: 100%;
+    background-color: #131313;
+    color: white ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    position: fixed;
+    
+
+
+    .headerLogo{
+        font-size: 22px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+
+    }
+
+    .headerNavBar{
+        display: flex;
+
+        .hamburgerIcon{
+            background-image: url('./../../../public/hamburger\ menu.png');
+            width: 1.5rem;
+            height: 1.5rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+            margin-left: 1rem;
+            cursor: pointer;
+
+        }
+
+        .searchIcon{
+            background-image: url('./../../../public/search.png');
+            width: 1.2rem;
+            height: 1.2rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 250ms;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        .navBarLinks{
+            display: none;
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 250ms;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
+        @media (min-width: 680px) {
+    
+            .hamburgerIcon{
+                display: none;
+            }
+    
+            .navBarLinks{
+                display: block;
+            }
+
+            .searchIcon{
+                width: 1.3rem;
+                height: 1.3rem;
+            }
+        }
+    }
+
+    @media (min-width: 840px) {
+        padding: 1.3rem 2rem;
+
+        .headerLogo{
+            font-size: 28px;
+        }
+    }
+
+    @media (min-width:1200px) {
+        padding: 1rem 6rem;
+
+        .headerLogo{
+            font-size: 32px;
+        }
+    }
+
+}

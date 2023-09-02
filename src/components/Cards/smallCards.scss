@@ -1,0 +1,97 @@
+.smallCards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3rem;
+    color: white;
+    transition: 250ms;
+    width: 90vw;
+
+    &:hover{
+        background-color: rgb(33, 33, 33);
+    }
+
+    .leftSide{
+        display: flex;
+        align-items: center;
+    }
+
+    .smallCardsImage{
+        background-color: rgb(200, 174, 173);
+        width: 3.5rem;
+        height: 3.5rem;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .smallCardsInfo{
+        margin-left: 1rem;
+        cursor: pointer;
+
+        p{
+            font-size: 10px;   
+            margin-top: 5px;
+        }
+    }
+
+    .smallCardsIcons{
+        display: flex;
+        align-items: center;
+        
+
+        .playIcon{
+            font-size: 40px;
+            cursor: pointer;
+            color: rgb(124, 124, 53);
+            transition: 250ms;
+             
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+        .heartIcon{
+            font-size: 30px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: 250ms;
+             
+            .redHeartIcon{
+                color: red;
+            }
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+       
+        
+    }
+
+    @media (min-width: 660px) {
+        width: 90%vw;
+    } 
+    
+    @media (min-width: 900px) {
+        width: 85vw;
+        .smallCardsIcons{    
+            .heartIcon{
+                font-size: 30px;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        width: 65vw;
+        .smallCardsIcons{
+            .heartIcon{
+                font-size: 35px;
+            }
+        }
+    }
+}
