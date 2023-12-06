@@ -3,8 +3,23 @@
 This is a Next.js/React.js project that utilizes the Spotify API to create a music application. The application allows users to search for artists, view artist details and add/remove tracks from their favorites. Please note that the data is not persisted and will be cleared upon page reload.
 
 ## Getting Started
+1. Clone the project repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Check the .env.example file provided in the project for necessary environment variables.
+4. Rename .env.example to .env and fill in the required Spotify API credentials or any other necessary environment variables.
 
-First, run the development server:
+
+Next, install the project dependencies by running the following command:
+
+```
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
